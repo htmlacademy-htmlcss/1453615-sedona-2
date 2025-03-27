@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Устинов Алексей](https://up.htmlacademy.ru/htmlcss-individual/2/user/1453615).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
