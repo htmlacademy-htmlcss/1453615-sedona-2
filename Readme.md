@@ -5,6 +5,10 @@
 
 ---
 
+## Сайт проекта опубликован в [GitHub Pages](https://aleks-yustas.github.io/1453615-sedona-2/).
+
+---
+
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
