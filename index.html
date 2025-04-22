@@ -99,7 +99,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="page__footer footer">
         <ul class="footer__socials socials">
           <li class="socials__item">
             <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="HTML Academy во Вконтакте"></a>
@@ -114,6 +114,59 @@
         <a class="footer__link" href="tel:+78128121212" aria-label="Позвонить в Седону">+7 (812) 812-12-12</a>
         <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy"></a>
       </footer>
+    </div>
+    <div class="modal">
+      <h3 class="modal__title">Поиск гостиницы в Седоне</h3>
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <div class="modal__content">
+        <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="search-form__feeld search-form__feeld--text text-field">
+            <label class="text-field__label" for="checkin-date">Дата заезда:</label>
+            <input class="text-field__input" value="27 апреля 2020" id="checkin-date" type="text">
+            <span class="text-field__notice field__notice--error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="search-form__feeld search-form__feeld--text text-field">
+            <label class="text-field__label" for="checkout-date">Дата заезда:</label>
+            <input class="text-field__input" value="1 сентября 2023" id="checkout-date" type="text">
+            <span class="text-field__notice">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="search-form__feeld search-form__feeld--counter counter-field">
+            <label class="counter-field__label" for="persons-count">Взрослые:</label>
+            <div class="counter-field__group">
+              <button class="counter-field__button counter-field__button--reduce">
+                <span class="visually-hidden">уменьшить</span>
+              </button>
+              <input class="counter-field__input" id="persons-count" type="number" value="2">
+              <button class="counter-field__button counter-field__button--reduce">
+                <span class="visually-hidden">увеличить</span>
+              </button>
+            </div>
+          </div>
+          <div class="search-form__feeld search-form__feeld--counter counter-field">
+            <label class="counter-field__label" for="childs-count">Дети:</label>
+            <div class="counter-field__info tooltip">
+              <button class="tooltip__anchor" type="button">
+                <span class="visually-hidden">Информация</span>
+              </button>
+              <div class="tooltip__content">
+                <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+            </div>
+            <div class="counter-field__group">
+              <button class="counter-field__button counter-field__button--reduce">
+                <span class="visually-hidden">уменьшить</span>
+              </button>
+              <input class="counter-field__input" id="childs-count" type="number" value="2">
+              <button class="counter-field__button counter-field__button--reduce">
+                <span class="visually-hidden">увеличить</span>
+              </button>
+            </div>
+          </div>
+          <button class="search-form__submit button button--size_wide button--color_blue" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
