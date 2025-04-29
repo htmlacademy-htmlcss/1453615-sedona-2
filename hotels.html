@@ -7,24 +7,26 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page__header header">
-        <a class="header__logo" href="">Логотип Седоны</a>
+        <a class="header__logo logo" href="/" aria-label="Главная страница">
+          <img class="img/logo.svg" src="logo__image" alt="Логотип Седоны">
+        </a>
         <nav class="header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Главная</a>
+              <a class="main-nav__link" href="/">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">О Седоне</a>
+              <a class="main-nav__link" href="#">О Седоне</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="" aria-current="page">Гостиницы</a>
+              <a class="main-nav__link" href="hotels.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="header__actions actions">
           <button class="actions__search" type="button" aria-label="Поиск"></button>
           <button class="actions__favorite" type="button" aria-label="Избранное"></button>
-          <button class="actions__signup btn-main--color_brown" type="button">Хочу сюда!</button>
+          <button class="actions__signup button button--color_brown" type="button">Хочу сюда!</button>
         </div>
       </header>
       <main class="page__main">
@@ -128,7 +130,7 @@
           </header>
           <ul class="results__list">
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-image.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="hotel-1.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Amara Resort & Spa</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 4000 ₽</span>
@@ -144,7 +146,7 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-image.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="hotel-2.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 5000 ₽</span>
@@ -160,7 +162,7 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-image.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="hotel-3.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Desert Quail Inn</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 2500 ₽</span>
@@ -176,7 +178,7 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-image.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="hotel-4.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">GreenTree Inn</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 1500 ₽</span>
@@ -232,7 +234,7 @@
             <label class="form-subscribe__input input">
               <input class="input__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
             </label>
-            <button class="form-subscribe__submit btn-main btn-main--color_blue" type="submit">Подписаться</button>
+            <button class="form-subscribe__submit button button--color_blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -249,7 +251,9 @@
           </li>
         </ul>
         <a class="footer__link" href="tel:+78128121212" aria-label="Позвонить в Седону">+7 (812) 812-12-12</a>
-        <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy"></a>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+        </a>
       </footer>
     </div>
   </body>
