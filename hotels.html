@@ -9,7 +9,7 @@
     <div class="page__wrapper">
       <header class="page__header header">
         <a class="header__logo logo" href="/" aria-label="Главная страница">
-          <img class="logo__image" src="img/logo.svg" alt="Логотип Седоны">
+          <img class="logo__image" src="img/logo.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
         <nav class="header__nav main-nav">
           <ul class="main-nav__list">
@@ -27,11 +27,11 @@
         <div class="header__actions actions">
           <button class="actions__search" type="button" aria-label="Поиск"></button>
           <button class="actions__favorite" type="button" aria-label="Избранное"></button>
-          <button class="actions__signup button button--color_brown" type="button">Хочу сюда!</button>
+          <button class="actions__signup button button--color_main" type="button">Хочу сюда!</button>
         </div>
       </header>
       <main class="page__main">
-        <div class="hero">
+        <div class="hero hero--inner">
           <header class="hero__header">
             <h1 class="hero__title page-title">Гостиницы Седоны</h1>
             <ul class="hero__breadcrumbs breadcrumbs">
@@ -104,8 +104,8 @@
               </div>
             </fieldset>
             <fieldset class="search-form__group search-group search-group--actions">
-              <button class="button button--main" type="submit">Применить</button>
-              <button class="button button--transparent" type="reset">Сбросить</button>
+              <button class="button button--color_accent" type="submit">Применить</button>
+              <button class="button button--color_transparent" type="reset">Сбросить</button>
             </fieldset>
           </form>
         </div>
@@ -115,29 +115,36 @@
             <div class="results__settings">
               <select class="results__order select" name="order">
                 <option value="price-from-cheaper">Сначала дешевые</option>
+                <option value="price-from-expensive">Сначала дорогие</option>
               </select>
               <ul class="result__view view-toggler">
-                <li class="view-toggler__item view-toggler__item--grid">
-                  <span class="visually-hidden">Отобразить результаты сеткой</span>
+                <li class="view-toggler__item">
+                  <a class="view-toggler__link view-toggler__link--grid" href="catalog.html?view=tile">
+                    <span class="visually-hidden">Отобразить результаты сеткой</span>
+                  </a>
                 </li>
-                <li class="view-toggler__item view-toggler__item--feed">
-                  <span class="visually-hidden">Отобрасить результаты лентой</span>
+                <li class="view-toggler__item">
+                  <a class="view-toggler__link view-toggler__link--feed" href="catalog.html?view=card">
+                    <span class="visually-hidden">Отобрасить результаты лентой</span>
+                  </a>
                 </li>
-                <li class="view-toggler__item view-toggler__item--list">
-                  <span class="visually-hidden">Отобразить результаты списком</span>
+                <li class="view-toggler__item">
+                  <a class="view-toggler__link view-toggler__link--list" href="catalog.html?view=list">
+                    <span class="visually-hidden">Отобразить результаты списком</span>
+                  </a>
                 </li>
               </ul>
             </div>
           </header>
           <ul class="results__list">
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-1.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-1.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Amara Resort & Spa</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 4000 ₽</span>
               <div class="hotel-card__actions">
-                <a class="hotel-card__info button button--color_brown" href="#">Подробнее</a>
-                <button class="hotel-card__favorite button button--color_blue">В избранное</button>
+                <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
+                <button class="hotel-card__favorite button button--color_accent">В избранное</button>
               </div>
               <div class="hotel-card__rate">
                 <div class="hotel-card__stars">
@@ -147,13 +154,13 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-2.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-2.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 5000 ₽</span>
               <div class="hotel-card__actions">
-                <a class="hotel-card__info button button--color_brown" href="#">Подробнее</a>
-                <button class="hotel-card__favorite button button--color_green">В избранном</button>
+                <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
+                <button class="hotel-card__favorite button button--color_active">В избранном</button>
               </div>
               <div class="hotel-card__rate">
                 <div class="hotel-card__stars">
@@ -163,13 +170,13 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-3.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-3.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">Desert Quail Inn</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 2500 ₽</span>
               <div class="hotel-card__actions">
-                <a class="hotel-card__info button button--color_brown" href="#">Подробнее</a>
-                <button class="hotel-card__favorite button button--color_blue">В избранное</button>
+                <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
+                <button class="hotel-card__favorite button button--color_accent">В избранное</button>
               </div>
               <div class="hotel-card__rate">
                 <div class="hotel-card__stars">
@@ -179,13 +186,13 @@
               </div>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="hotel-4.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-4.jpg" width="300" height="212" alt="">
               <h3 class="hotel-card__title">GreenTree Inn</h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 1500 ₽</span>
               <div class="hotel-card__actions">
-                <a class="hotel-card__info button button--color_brown" href="#">Подробнее</a>
-                <button class="hotel-card__favorite button button--color_blue">В избранное</button>
+                <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
+                <button class="hotel-card__favorite button button--color_accent">В избранное</button>
               </div>
               <div class="hotel-card__rate">
                 <div class="hotel-card__stars">
@@ -229,13 +236,15 @@
           </footer>
         </section>
         <section class="subscribe subscribe--inner">
-          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="subscribe__header section-header">
+            <h2 class="section-header__title">Подпишитесь на рассылку</h2>
+            <p class="section-header__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
           <form class="subscribe__form form-subscribe">
             <label class="form-subscribe__input input">
               <input class="input__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
             </label>
-            <button class="form-subscribe__submit button button--color_blue" type="submit">Подписаться</button>
+            <button class="form-subscribe__submit button button--color_accent" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -251,7 +260,7 @@
             <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="HTML Academy в Ютубе"></a>
           </li>
         </ul>
-        <a class="footer__link" href="tel:+78128121212" aria-label="Позвонить в Седону">+7 (812) 812-12-12</a>
+        <a class="footer__phone" href="tel:+78128121212" aria-label="Позвонить в Седону">+7 (812) 812-12-12</a>
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
           <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
