@@ -71,6 +71,13 @@ img {
   overflow-wrap: break-word;
 }
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .main-nav__link {
   font-weight: 700;
   font-size: 20px;
@@ -87,6 +94,8 @@ img {
   line-height: 20px;
   text-decoration: none;
   color: var(--text-color-bg);
+
+  cursor: pointer;
 }
 
 .button--color_main {
@@ -139,6 +148,13 @@ img {
   color: var(--text-color-bg);
 }
 
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .features__item {
   text-align: center;
 }
@@ -170,6 +186,13 @@ img {
 .features__item--color_accent .features__name,
 .features__item--color_accent .features__description {
   color: inherit;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .benefits__item {
@@ -210,6 +233,13 @@ img {
   color: var(--text-color-basic-60);
 }
 
+.socials {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .footer__phone {
   font-size: 40px;
   line-height: 40px;
@@ -225,6 +255,13 @@ img {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .breadcrumbs__link {
@@ -268,10 +305,24 @@ img {
   color: var(--text-color-basic);
 }
 
+.results__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .select {
   font-size: 18px;
   line-height: 21px;
   color: var(--text-color-second);
+}
+
+.view-toggler {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .hotel-card__title {
@@ -293,6 +344,13 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   color: var(--text-color-second);
+}
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .pagination__link {
