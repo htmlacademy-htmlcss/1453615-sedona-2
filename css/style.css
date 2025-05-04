@@ -26,6 +26,8 @@
   --bg-color-accent: #82b3d3;
   --bg-color-accent-20: #82b3d333;
   --bg-color-accent-12: #82b3d31f;
+  --bg-color-light: #e5e5e5;
+  --bg-color-lighter: #f2f2f2;
 
   --button-color-main: #756157;
   --button-color-accent: #82b3d3;
@@ -44,7 +46,9 @@
 
 img {
   max-width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .visually-hidden {
@@ -71,7 +75,53 @@ img {
   overflow-wrap: break-word;
 }
 
+.page__body {
+  margin: 0;
+
+  background-color: var(--bg-color-lighter);
+}
+
+.page__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+
+  background-color: var(--bg-color-main);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr 268px;
+  column-gap: 28px;
+  min-height: 64px;
+  padding: 0  70px;
+}
+
+.header__logo {
+  grid-column: 1;
+  align-self: start;
+  margin-bottom: -6px;
+
+  line-height: 1;
+}
+
+.header__nav {
+  grid-column: 2;
+}
+
+.header__actions {
+  justify-self: end;
+}
+
+.logo {
+  display: block;
+  min-height: 70px;
+}
+
 .main-nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -79,10 +129,14 @@ img {
 }
 
 .main-nav__link {
+  display: block;
+  padding: 20px 16px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
+  text-align: center;
   color: var(--text-color-main);
 }
 
@@ -93,6 +147,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--text-color-bg);
 
   cursor: pointer;
