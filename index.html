@@ -8,6 +8,7 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
+    <div class="page__overlay" hidden></div>
     <div class="page__wrapper">
       <header class="page__header header">
         <a class="header__logo logo" href="index.html" aria-label="Главная страница">
@@ -27,8 +28,10 @@
           </ul>
         </nav>
         <div class="header__actions actions">
-          <a class="actions__search" href="#" type="button" aria-label="Поиск"></a>
-          <a class="actions__favorite" href="#" type="button" aria-label="Избранное" data-favorite-count="12"></a>
+          <a class="action__icon-link actions__icon-link--search" href="#" type="button" aria-label="Поиск"></a>
+          <a class="action__icon-link actions__icon-link--favorite" href="#" type="button" aria-label="Избранное">
+            <span class="actions__count">12</span>
+          </a>
           <a class="actions__signup button button--color_main" href="#" type="button">Хочу сюда!</a>
         </div>
       </header>
@@ -42,73 +45,79 @@
         </section>
         <section class="features">
           <div class="features__header section-header">
-            <h2 class="section-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="section-header__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <h2 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="features__subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="features__list">
-            <li class="features__item features__item--color_accent">
-              <h3 class="features__name">Настоящий городок</h3>
-              <p class="features__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-            <li class="features__item features__item--image">
-              <img class="fieatures__image" src="img/photo-1.jpg" width="800" height="385" alt="Городская улица Седоны с видом на горы">
+            <li class="features__item features__item--color_accent features__item--image_right">
+              <div class="features__content">
+                <h3>Настоящий городок</h3>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="features__image" src="img/photo-1.jpg" width="800" height="385" alt="Городская улица Седоны с видом на горы">
             </li>
             <li class="features__item features__item--color_accent-12">
-              <h3 class="features__name">Небольшая площадь</h3>
-              <p class="features__description">Все достопримечательности находятся очень близко</p>
+              <div class="features__content">
+                <h3>Небольшая площадь</h3>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="features__item features__item--color_accent-20">
-              <h3 class="features__name">Красивая дорога</h3>
-              <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="features__content">
+                <h3>Красивая дорога</h3>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="features__item features__item--color_accent-12">
-              <h3 class="features__name">Мало туристов</h3>
-              <p class="features__description">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="features__content">
+                <h3>Мало туристов</h3>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
-            <li class="features__item features__item--image">
-              <img class="fieatures__image" src="img/photo-2.jpg" width="800" height="385" alt="Мост дьявола в горах Седоны">
-            </li>
-            <li class="features__item features__item--color_accent">
-              <h3 class="features__name">Там есть мост дьявола</h3>
-              <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <li class="features__item features__item--color_accent features__item--image_left">
+              <div class="features__content">
+                <h3>Там есть мост дьявола</h3>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+              <img class="features__image" src="img/photo-2.jpg" width="800" height="385" alt="Мост дьявола в горах Седоны">
             </li>
           </ul>
         </section>
         <section class="benefits">
           <div class="benefits__header section-header">
-            <h2 class="section-header__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="section-header__text">Опытный персонал и качественное обслуживание!</p>
+            <h2 class="benefits__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="benefits__text">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="benefits__list">
             <li class="benefits__item benefits__item--color_accent-12">
               <h3 class="benefits__name">Жильё</h3>
-              <p class="benefits__desctiption">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+              <p class="benefits__desctiption">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="benefits__item">
               <h3 class="benefits__name">Еда</h3>
-              <p class="benefits__desctiption">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="benefits__desctiption">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="benefits__item benefits__item--color_accent-12">
               <h3 class="benefits__name">Сувениры</h3>
-              <p class="benefits__desctiption">Не только китайского, но и настоящего местного производства!</p>
+              <p class="benefits__desctiption">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="search">
-          <h2 class="visually-hidden">Поиск гостиницы</h2>
           <div class="search__header section-header">
-            <b class="section-header__title">Заинтересовались?</b>
-            <p class="section-header__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <h2 class="search__header__title">Заинтересовались?</h2>
+            <p class="search__header__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <button class="search__button button button--color_main">Поиск гостиницы в Седоне</button>
+          <a class="search__button button button--color_main" href="#" id="search-hotel">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscribe">
-          <div class="subscribe__header section-header--background">
-            <h2 class="section-header__title">Подпишитесь на рассылку</h2>
-            <p class="section-header__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscribe subscribe--main">
+          <div class="subscribe__header section-header">
+            <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+            <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscribe__form form-subscribe">
             <label class="form-subscribe__input input">
+              <span class="visually-hidden">Введите e-mail</span>
               <input class="input__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
             </label>
             <button class="form-subscribe__submit button button--color_accent" type="submit">Подписаться</button>
@@ -133,58 +142,63 @@
         </a>
       </footer>
     </div>
-    <div class="modal">
-      <h3 class="modal__title">Поиск гостиницы в Седоне</h3>
-      <button class="modal__close">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
-      <div class="modal__content">
-        <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
-          <div class="search-form__feeld search-form__feeld--text text-field">
-            <label class="text-field__label" for="checkin-date">Дата заезда:</label>
-            <input class="text-field__input" value="27 апреля 2020" id="checkin-date" type="text">
-            <span class="text-field__notice field__notice--error">Мы не можем отправить вас в прошлое.</span>
-          </div>
-          <div class="search-form__feeld search-form__feeld--text text-field">
-            <label class="text-field__label" for="checkout-date">Дата заезда:</label>
-            <input class="text-field__input" value="1 сентября 2023" id="checkout-date" type="text">
-            <span class="text-field__notice">На эти даты есть свободные номера. Пока есть.</span>
-          </div>
-          <div class="search-form__feeld search-form__feeld--counter counter-field">
-            <label class="counter-field__label" for="persons-count">Взрослые:</label>
-            <div class="counter-field__group">
-              <button class="counter-field__button counter-field__button--reduce">
-                <span class="visually-hidden">уменьшить</span>
-              </button>
-              <input class="counter-field__input" id="persons-count" type="number" value="2">
-              <button class="counter-field__button counter-field__button--reduce">
-                <span class="visually-hidden">увеличить</span>
-              </button>
+    <div class="modal modal--hidden" id="search-modal">
+      <div class="modal__inner">
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <h3 class="modal__title">Поиск гостиницы в Седоне</h3>
+        <div class="modal__content">
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+            <div class="modal-form__text-field text-field">
+              <label class="text-field__label" for="checkin-date">Дата заезда:</label>
+              <input class="text-field__input" value="27 апреля 2020" id="checkin-date" type="text">
+              <span class="text-field__notice field__notice--error">Мы не можем отправить вас в прошлое.</span>
             </div>
-          </div>
-          <div class="search-form__feeld search-form__feeld--counter counter-field">
-            <label class="counter-field__label" for="childs-count">Дети:</label>
-            <div class="counter-field__info tooltip">
-              <button class="tooltip__anchor" type="button">
-                <span class="visually-hidden">Информация</span>
-              </button>
-              <div class="tooltip__content">
-                <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+            <div class="modal-form__text-field text-field">
+              <label class="text-field__label" for="checkout-date">Дата заезда:</label>
+              <input class="text-field__input" value="1 сентября 2023" id="checkout-date" type="text">
+              <span class="text-field__notice">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-form__counter-field counter-field">
+              <label class="counter-field__label" for="persons-count">Взрослые:</label>
+              <div class="counter-field__group">
+                <button class="counter-field__button counter-field__button--reduce">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <input class="counter-field__input" id="persons-count" type="number" value="2">
+                <button class="counter-field__button counter-field__button--reduce">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
               </div>
             </div>
-            <div class="counter-field__group">
-              <button class="counter-field__button counter-field__button--reduce">
-                <span class="visually-hidden">уменьшить</span>
-              </button>
-              <input class="counter-field__input" id="childs-count" type="number" value="2">
-              <button class="counter-field__button counter-field__button--reduce">
-                <span class="visually-hidden">увеличить</span>
-              </button>
+            <div class="modal-form__counter-field counter-field">
+              <label class="counter-field__label" for="childs-count">
+                Дети:
+                <div class="counter-field__info tooltip">
+                  <button class="tooltip__anchor" type="button">
+                    <span class="visually-hidden">Информация</span>
+                  </button>
+                  <div class="tooltip__content">
+                    <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+              </label>
+              <div class="counter-field__group">
+                <button class="counter-field__button counter-field__button--reduce" type="button">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <input class="counter-field__input" id="childs-count" type="number" value="2" min="0" max="9">
+                <button class="counter-field__button counter-field__button--reduce" type="button">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <button class="search-form__submit button button--size_wide button--color_blue" type="submit">Найти</button>
-        </form>
+            <button class="modal-form__submit button button--color_accent" type="submit">Найти</button>
+          </form>
+        </div>
       </div>
     </div>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
