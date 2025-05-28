@@ -1,3 +1,5 @@
+'use strict'
+
 const page = document.querySelector('.page');
 const pageOverlay = page.querySelector('.page__overlay');
 const searchLink = document.querySelector('#search-hotel');

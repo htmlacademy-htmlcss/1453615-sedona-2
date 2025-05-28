@@ -17,7 +17,7 @@
         <nav class="header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
+              <a class="main-nav__link" aria-current="page" tabindex="-1">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">О Седоне</a>
@@ -28,8 +28,15 @@
           </ul>
         </nav>
         <div class="header__actions actions">
-          <a class="action__icon-link actions__icon-link--search" href="#" type="button" aria-label="Поиск"></a>
+          <a class="action__icon-link actions__icon-link--search" href="#" type="button" aria-label="Поиск">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
+            </svg>
+          </a>
           <a class="action__icon-link actions__icon-link--favorite" href="#" type="button" aria-label="Избранное">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+            </svg>
             <span class="actions__count">12</span>
           </a>
           <a class="actions__signup button button--color_main" href="#" type="button">Хочу сюда!</a>
@@ -89,15 +96,15 @@
             <p class="benefits__text">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="benefits__list">
-            <li class="benefits__item benefits__item--color_accent-12">
+            <li class="benefits__item benefits__item--color_accent-12 benefits__item--icon_housing">
               <h3 class="benefits__name">Жильё</h3>
               <p class="benefits__desctiption">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item benefits__item--icon_eating">
               <h3 class="benefits__name">Еда</h3>
               <p class="benefits__desctiption">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="benefits__item benefits__item--color_accent-12">
+            <li class="benefits__item benefits__item--color_accent-12 benefits__item--icon_souvenir">
               <h3 class="benefits__name">Сувениры</h3>
               <p class="benefits__desctiption">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -116,9 +123,9 @@
             <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscribe__form form-subscribe">
-            <label class="form-subscribe__input input">
+            <label class="form-subscribe__input">
               <span class="visually-hidden">Введите e-mail</span>
-              <input class="input__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+              <input class="form-subscribe__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
             </label>
             <button class="form-subscribe__submit button button--color_accent" type="submit">Подписаться</button>
           </form>
@@ -127,18 +134,32 @@
       <footer class="page__footer footer">
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="HTML Academy во Вконтакте"></a>
+            <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="HTML Academy во Вконтакте">
+              <svg width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.19-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.31 12.34 9.37 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C19.11 13.22 19.4 14 20.4 14h2.63c.75 0 1.13-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93z" style="stroke-width:.999989"/>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="HTML Academy в Телеграме"></a>
+            <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="HTML Academy в Телеграме">
+              <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.79.1.84 6.2c-1.09.44-1.08 1.05-.2 1.31l4.1 1.27 9.47-5.93c.44-.28.85-.13.52.17L7.05 9.9l-.28 4.2c.41 0 .6-.2.83-.42l1.99-1.92 4.13 3.04c.77.41 1.31.2 1.5-.7l2.72-12.72c.28-1.1-.43-1.6-1.15-1.28z" style="stroke-width:.996815"/>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="HTML Academy в Ютубе"></a>
+            <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="HTML Academy в Ютубе">
+              <svg width="22" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0ZM7.67 12.54V4.46L15 8.5Z"/>
+              </svg>
+            </a>
           </li>
         </ul>
         <a class="footer__phone" href="tel:+78128121212" aria-label="Позвонить в Седону">+7 (812) 812-12-12</a>
-        <a class="footer__copyright copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
+        <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <svg width="115" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 13.256v2.6h2.5v-2.6H0ZM11.6 4.856c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.156h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.956c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.056c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356h-2v12.7ZM28.9 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.356c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.156c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.256c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.256c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.356l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+          </svg>
         </a>
       </footer>
     </div>
@@ -146,18 +167,21 @@
       <div class="modal__inner">
         <button class="modal__close">
           <span class="visually-hidden">Закрыть окно</span>
+          <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 4.78 16.2 3.5l-5.7 5.7-5.72-5.7L3.5 4.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
+          </svg>
         </button>
         <h3 class="modal__title">Поиск гостиницы в Седоне</h3>
         <div class="modal__content">
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
             <div class="modal-form__text-field text-field">
               <label class="text-field__label" for="checkin-date">Дата заезда:</label>
-              <input class="text-field__input" value="27 апреля 2020" id="checkin-date" type="text">
-              <span class="text-field__notice field__notice--error">Мы не можем отправить вас в прошлое.</span>
+              <input class="text-field__input" value="27 апреля 2020" id="checkin-date" type="text" placeholder="Укажите дату">
+              <span class="text-field__notice text-field__notice--error">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="modal-form__text-field text-field">
               <label class="text-field__label" for="checkout-date">Дата заезда:</label>
-              <input class="text-field__input" value="1 сентября 2023" id="checkout-date" type="text">
+              <input class="text-field__input" value="1 сентября 2023" id="checkout-date" type="text" placeholder="Укажите дату">
               <span class="text-field__notice">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="modal-form__counter-field counter-field">
@@ -165,10 +189,20 @@
               <div class="counter-field__group">
                 <button class="counter-field__button counter-field__button--reduce">
                   <span class="visually-hidden">уменьшить</span>
+                  <span class="counter-field__icon">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </span>
                 </button>
                 <input class="counter-field__input" id="persons-count" type="number" value="2">
                 <button class="counter-field__button counter-field__button--reduce">
                   <span class="visually-hidden">увеличить</span>
+                  <span class="counter-field__icon">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </span>
                 </button>
               </div>
             </div>
@@ -187,10 +221,20 @@
               <div class="counter-field__group">
                 <button class="counter-field__button counter-field__button--reduce" type="button">
                   <span class="visually-hidden">уменьшить</span>
+                  <span class="counter-field__icon">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </span>
                 </button>
                 <input class="counter-field__input" id="childs-count" type="number" value="2" min="0" max="9">
                 <button class="counter-field__button counter-field__button--reduce" type="button">
                   <span class="visually-hidden">увеличить</span>
+                  <span class="counter-field__icon">
+                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </span>
                 </button>
               </div>
             </div>
@@ -199,6 +243,6 @@
         </div>
       </div>
     </div>
-    <script src="js/main.js" type="module"></script>
+    <script async src="./js/main.js"></script>
   </body>
 </html>
