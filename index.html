@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon.png" type="image/png">
   </head>
   <body class="page__body">
     <div class="page__overlay" hidden></div>
@@ -28,18 +27,18 @@
           </ul>
         </nav>
         <div class="header__actions actions">
-          <a class="action__icon-link actions__icon-link--search" href="#" type="button" aria-label="Поиск">
+          <a class="action__icon-link actions__icon-link--search" href="#" aria-label="Поиск">
             <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
             </svg>
           </a>
-          <a class="action__icon-link actions__icon-link--favorite" href="#" type="button" aria-label="Избранное">
+          <a class="action__icon-link actions__icon-link--favorite" href="#" aria-label="Избранное">
             <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
             </svg>
             <span class="actions__count">12</span>
           </a>
-          <a class="actions__signup button button--color_main" href="#" type="button">Хочу сюда!</a>
+          <a class="actions__signup button button--color_main" href="#">Хочу сюда!</a>
         </div>
       </header>
       <main class="page__main">
@@ -63,19 +62,19 @@
               </div>
               <img class="features__image" src="img/photo-1.jpg" width="800" height="385" alt="Городская улица Седоны с видом на горы">
             </li>
-            <li class="features__item features__item--color_accent-12">
+            <li class="features__item features__item--color_lighter">
               <div class="features__content">
                 <h3>Небольшая площадь</h3>
                 <p>Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="features__item features__item--color_accent-20">
+            <li class="features__item features__item--color_light">
               <div class="features__content">
                 <h3>Красивая дорога</h3>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="features__item features__item--color_accent-12">
+            <li class="features__item features__item--color_lighter">
               <div class="features__content">
                 <h3>Мало туристов</h3>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -125,7 +124,7 @@
           <form class="subscribe__form form-subscribe">
             <label class="form-subscribe__input">
               <span class="visually-hidden">Введите e-mail</span>
-              <input class="form-subscribe__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+              <input class="form-subscribe__field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             </label>
             <button class="form-subscribe__submit button button--color_accent" type="submit">Подписаться</button>
           </form>
@@ -165,7 +164,7 @@
     </div>
     <div class="modal modal--hidden" id="search-modal">
       <div class="modal__inner">
-        <button class="modal__close">
+        <button class="modal__close" type="button">
           <span class="visually-hidden">Закрыть окно</span>
           <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.5 4.78 16.2 3.5l-5.7 5.7-5.72-5.7L3.5 4.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
@@ -185,9 +184,11 @@
               <span class="text-field__notice">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="modal-form__counter-field counter-field">
-              <label class="counter-field__label" for="persons-count">Взрослые:</label>
+              <div class="counter-field__title">
+                <label class="counter-field__label" for="persons-count">Взрослые:</label>
+              </div>
               <div class="counter-field__group">
-                <button class="counter-field__button counter-field__button--reduce">
+                <button class="counter-field__button counter-field__button--reduce" type="button">
                   <span class="visually-hidden">уменьшить</span>
                   <span class="counter-field__icon">
                     <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +197,7 @@
                   </span>
                 </button>
                 <input class="counter-field__input" id="persons-count" type="number" value="2">
-                <button class="counter-field__button counter-field__button--reduce">
+                <button class="counter-field__button counter-field__button--reduce" type="button">
                   <span class="visually-hidden">увеличить</span>
                   <span class="counter-field__icon">
                     <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,8 +208,8 @@
               </div>
             </div>
             <div class="modal-form__counter-field counter-field">
-              <label class="counter-field__label" for="childs-count">
-                Дети:
+              <div class="counter-field__title">
+                <label class="counter-field__label" for="childs-count">Дети:</label>
                 <div class="counter-field__info tooltip">
                   <button class="tooltip__anchor" type="button">
                     <span class="visually-hidden">Информация</span>
@@ -217,7 +218,7 @@
                     <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                   </div>
                 </div>
-              </label>
+              </div>
               <div class="counter-field__group">
                 <button class="counter-field__button counter-field__button--reduce" type="button">
                   <span class="visually-hidden">уменьшить</span>

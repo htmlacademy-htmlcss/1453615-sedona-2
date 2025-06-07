@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon.png" type="image/png">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -27,18 +26,18 @@
           </ul>
         </nav>
         <div class="header__actions actions">
-          <a class="action__icon-link actions__icon-link--search" href="#" type="button" aria-label="Поиск">
+          <a class="action__icon-link actions__icon-link--search" href="#" aria-label="Поиск">
             <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
             </svg>
           </a>
-          <a class="action__icon-link actions__icon-link--favorite" href="#" type="button" aria-label="Избранное">
+          <a class="action__icon-link actions__icon-link--favorite" href="#" aria-label="Избранное">
             <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
             </svg>
             <span class="actions__count">12</span>
           </a>
-          <a class="actions__signup button button--color_main" href="#" type="button">Хочу сюда!</a>
+          <a class="actions__signup button button--color_main" href="#">Хочу сюда!</a>
         </div>
       </header>
       <main class="page__main">
@@ -160,7 +159,7 @@
           </header>
           <ul class="results__list">
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="img/hotel-1.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-1.jpg" width="300" height="212" alt="Вид на звёздное небо из скалистой пещеры.">
               <h3 class="hotel-card__title">
                 <a href="#">Amara Resort & Spa</a>
               </h3>
@@ -194,14 +193,14 @@
               <span class="hotel-card__rating">Рейтинг: 8,5</span>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="img/hotel-2.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-2.jpg" width="300" height="212" alt="Скалы Рэд-Рокс и радуга на закате.">
               <h3 class="hotel-card__title">
                 <a href="#">Villas at Poco Diablo</a>
               </h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 5000 ₽</span>
               <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
-              <button class="hotel-card__favorite button button--color_active">В избранном</button>
+              <a class="hotel-card__favorite button button--color_active">В избранном</a>
               <div class="hotel-card__stars">
                 <span class="visually-hidden">4 звезды</span>
                 <span class="hotel-card__star" role="presentation">
@@ -228,14 +227,14 @@
               <span class="hotel-card__rating">Рейтинг: 9,2</span>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="img/hotel-3.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-3.jpg" width="300" height="212" alt="Гора Кейн-Маунтин на рассвете.">
               <h3 class="hotel-card__title">
                 <a href="#">Desert Quail Inn</a>
               </h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 2500 ₽</span>
               <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
-              <button class="hotel-card__favorite button button--color_accent">В избранное</button>
+              <a class="hotel-card__favorite button button--color_accent">В избранное</a>
               <div class="hotel-card__stars">
                 <span class="visually-hidden">3 звезды</span>
                 <span class="hotel-card__star" role="presentation">
@@ -257,14 +256,14 @@
               <span class="hotel-card__rating">Рейтинг: 6,9</span>
             </li>
             <li class="results__item hotel-card">
-              <img class="hotel-card__image" src="img/hotel-4.jpg" width="300" height="212" alt="">
+              <img class="hotel-card__image" src="img/hotel-4.jpg" width="300" height="212" alt="Гора Кейн-Маунтин на фоне ночного звёздного неба.">
               <h3 class="hotel-card__title">
                 <a href="#">GreenTree Inn</a>
               </h3>
               <span class="hotel-card__type">Гостиница</span>
               <span class="hotel-card__price">От 1500 ₽</span>
               <a class="hotel-card__info button button--color_main" href="#">Подробнее</a>
-              <button class="hotel-card__favorite button button--color_accent">В избранное</button>
+              <a class="hotel-card__favorite button button--color_accent">В избранное</a>
               <div class="hotel-card__stars">
                 <span class="visually-hidden">2 звезды</span>
                 <span class="hotel-card__star" role="presentation">
@@ -322,7 +321,7 @@
           <form class="subscribe__form form-subscribe">
             <label class="form-subscribe__input">
               <span class="visually-hidden">Введите e-mail</span>
-              <input class="form-subscribe__field" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+              <input class="form-subscribe__field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             </label>
             <button class="form-subscribe__submit button button--color_accent" type="submit">Подписаться</button>
           </form>
