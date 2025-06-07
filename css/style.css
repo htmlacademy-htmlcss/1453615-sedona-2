@@ -118,6 +118,7 @@ img {
 .header {
   display: grid;
   grid-template-columns: auto 1fr 268px;
+  align-items: start;
   column-gap: 28px;
   min-height: 64px;
   padding: 0  70px;
@@ -325,8 +326,6 @@ img {
 .button--size_large {
   font-size: 20px;
   line-height: 36px;
-
-
 }
 
 .actions {
@@ -334,6 +333,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 64px;
 }
 
 .action__icon-link {
@@ -466,11 +466,11 @@ img {
   background-color: var(--bg-color-accent);
 }
 
-.features__item--color_accent-20 {
+.features__item--color_light {
   background-color: var(--bg-color-accent-20);
 }
 
-.features__item--color_accent-12 {
+.features__item--color_lighter {
   background-color: var(--bg-color-accent-12);
 }
 
@@ -746,11 +746,17 @@ img {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 142px auto 115px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 20px 41.5px;
   align-items: center;
-  flex-wrap: wrap;
   padding: 47px 70px 31px;
+}
+
+.footer__phone {
+  text-align: center;
 }
 
 .footer__phone,
@@ -940,12 +946,13 @@ img {
   display: grid;
   grid-template-columns: 40px 31px 40px;
 
+
   border-radius: 4px;
   overflow: hidden;
   background-color: var(--bg-color-lighter);
 }
 
-.counter-field__label {
+.counter-field__title {
   display: flex;
   align-items: center;
 }
@@ -1540,15 +1547,15 @@ img {
 }
 
 .results__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 522px;
+  gap: 40px 20px;
+  align-items: start;
   margin-bottom: 40px;
 }
 
 .results__title {
-  margin: 0;
-  margin-right: 40px;
+  margin: 6.5px 0;
 
   font-weight: 700;
   font-size: 30px;
@@ -1558,15 +1565,15 @@ img {
 }
 
 .results__settings {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 290px 160px;
+  column-gap: 70px;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .result__view {
   margin: 0;
-  margin-left: 70px;
   padding: 0;
 
   list-style-type: none;
@@ -1575,7 +1582,8 @@ img {
 .view-toggler {
   display: flex;
   justify-content: flex-end;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .view-toggler__link {
@@ -1805,7 +1813,7 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  column-gap: 8px;
+  gap: 8px;
   margin: 0;
   padding: 0;
 
