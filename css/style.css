@@ -751,8 +751,15 @@ img {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 20px 41.5px;
-  align-items: center;
   padding: 47px 70px 31px;
+}
+
+.footer__column {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: min-content;
+  align-items: start;
+  row-gap: 10px;
 }
 
 .footer__phone {
@@ -761,8 +768,6 @@ img {
 
 .footer__phone,
 .footer__copyright {
-  font-size: 40px;
-  line-height: 40px;
   color: var(--link-color);
   text-decoration: none;
 
@@ -770,7 +775,17 @@ img {
   outline: none;
 }
 
+.footer__phone {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.footer__copyright {
+  padding: 3px 0;
+}
+
 .footer__copyright svg {
+  vertical-align: middle;
   fill: currentColor
 }
 
